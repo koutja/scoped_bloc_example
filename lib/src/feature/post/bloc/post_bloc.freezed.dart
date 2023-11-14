@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'post_bloc.dart';
 
@@ -12,31 +12,7 @@ part of 'post_bloc.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-/// @nodoc
-class _$PostEventTearOff {
-  const _$PostEventTearOff();
-
-  _AddTextPostEvent addText({required String text}) {
-    return _AddTextPostEvent(
-      text: text,
-    );
-  }
-
-  _AttachFilePostEvent attachFile({required String path}) {
-    return _AttachFilePostEvent(
-      path: path,
-    );
-  }
-
-  _SendPostEvent send() {
-    return const _SendPostEvent();
-  }
-}
-
-/// @nodoc
-const $PostEvent = _$PostEventTearOff();
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$PostEvent {
@@ -49,9 +25,9 @@ mixin _$PostEvent {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String text)? addText,
-    TResult Function(String path)? attachFile,
-    TResult Function()? send,
+    TResult? Function(String text)? addText,
+    TResult? Function(String path)? attachFile,
+    TResult? Function()? send,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -71,9 +47,9 @@ mixin _$PostEvent {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_AddTextPostEvent value)? addText,
-    TResult Function(_AttachFilePostEvent value)? attachFile,
-    TResult Function(_SendPostEvent value)? send,
+    TResult? Function(_AddTextPostEvent value)? addText,
+    TResult? Function(_AttachFilePostEvent value)? attachFile,
+    TResult? Function(_SendPostEvent value)? send,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -89,43 +65,44 @@ mixin _$PostEvent {
 /// @nodoc
 abstract class $PostEventCopyWith<$Res> {
   factory $PostEventCopyWith(PostEvent value, $Res Function(PostEvent) then) =
-      _$PostEventCopyWithImpl<$Res>;
+      _$PostEventCopyWithImpl<$Res, PostEvent>;
 }
 
 /// @nodoc
-class _$PostEventCopyWithImpl<$Res> implements $PostEventCopyWith<$Res> {
+class _$PostEventCopyWithImpl<$Res, $Val extends PostEvent>
+    implements $PostEventCopyWith<$Res> {
   _$PostEventCopyWithImpl(this._value, this._then);
 
-  final PostEvent _value;
   // ignore: unused_field
-  final $Res Function(PostEvent) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class _$AddTextPostEventCopyWith<$Res> {
-  factory _$AddTextPostEventCopyWith(
-          _AddTextPostEvent value, $Res Function(_AddTextPostEvent) then) =
-      __$AddTextPostEventCopyWithImpl<$Res>;
+abstract class _$$AddTextPostEventImplCopyWith<$Res> {
+  factory _$$AddTextPostEventImplCopyWith(_$AddTextPostEventImpl value,
+          $Res Function(_$AddTextPostEventImpl) then) =
+      __$$AddTextPostEventImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({String text});
 }
 
 /// @nodoc
-class __$AddTextPostEventCopyWithImpl<$Res>
-    extends _$PostEventCopyWithImpl<$Res>
-    implements _$AddTextPostEventCopyWith<$Res> {
-  __$AddTextPostEventCopyWithImpl(
-      _AddTextPostEvent _value, $Res Function(_AddTextPostEvent) _then)
-      : super(_value, (v) => _then(v as _AddTextPostEvent));
+class __$$AddTextPostEventImplCopyWithImpl<$Res>
+    extends _$PostEventCopyWithImpl<$Res, _$AddTextPostEventImpl>
+    implements _$$AddTextPostEventImplCopyWith<$Res> {
+  __$$AddTextPostEventImplCopyWithImpl(_$AddTextPostEventImpl _value,
+      $Res Function(_$AddTextPostEventImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _AddTextPostEvent get _value => super._value as _AddTextPostEvent;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? text = freezed,
+    Object? text = null,
   }) {
-    return _then(_AddTextPostEvent(
-      text: text == freezed
+    return _then(_$AddTextPostEventImpl(
+      text: null == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
               as String,
@@ -135,18 +112,13 @@ class __$AddTextPostEventCopyWithImpl<$Res>
 
 /// @nodoc
 
-@Implements<_TextContainer>()
-@With<_InitialStateEmitter>()
-@With<_AddingTextEmitter>()
-@With<_HasTextEmitter>()
-@With<_ErrorEmitter>()
-class _$_AddTextPostEvent extends _AddTextPostEvent
+class _$AddTextPostEventImpl extends _AddTextPostEvent
     with
         _InitialStateEmitter,
         _AddingTextEmitter,
         _HasTextEmitter,
         _ErrorEmitter {
-  const _$_AddTextPostEvent({required this.text}) : super._();
+  const _$AddTextPostEventImpl({required this.text}) : super._();
 
   @override
   final String text;
@@ -160,18 +132,19 @@ class _$_AddTextPostEvent extends _AddTextPostEvent
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _AddTextPostEvent &&
-            const DeepCollectionEquality().equals(other.text, text));
+            other is _$AddTextPostEventImpl &&
+            (identical(other.text, text) || other.text == text));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(text));
+  int get hashCode => Object.hash(runtimeType, text);
 
   @JsonKey(ignore: true)
   @override
-  _$AddTextPostEventCopyWith<_AddTextPostEvent> get copyWith =>
-      __$AddTextPostEventCopyWithImpl<_AddTextPostEvent>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$AddTextPostEventImplCopyWith<_$AddTextPostEventImpl> get copyWith =>
+      __$$AddTextPostEventImplCopyWithImpl<_$AddTextPostEventImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -186,9 +159,9 @@ class _$_AddTextPostEvent extends _AddTextPostEvent
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String text)? addText,
-    TResult Function(String path)? attachFile,
-    TResult Function()? send,
+    TResult? Function(String text)? addText,
+    TResult? Function(String path)? attachFile,
+    TResult? Function()? send,
   }) {
     return addText?.call(text);
   }
@@ -220,9 +193,9 @@ class _$_AddTextPostEvent extends _AddTextPostEvent
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_AddTextPostEvent value)? addText,
-    TResult Function(_AttachFilePostEvent value)? attachFile,
-    TResult Function(_SendPostEvent value)? send,
+    TResult? Function(_AddTextPostEvent value)? addText,
+    TResult? Function(_AttachFilePostEvent value)? attachFile,
+    TResult? Function(_SendPostEvent value)? send,
   }) {
     return addText?.call(this);
   }
@@ -249,40 +222,40 @@ abstract class _AddTextPostEvent extends PostEvent
         _AddingTextEmitter,
         _HasTextEmitter,
         _ErrorEmitter {
-  const factory _AddTextPostEvent({required String text}) = _$_AddTextPostEvent;
+  const factory _AddTextPostEvent({required final String text}) =
+      _$AddTextPostEventImpl;
   const _AddTextPostEvent._() : super._();
 
   String get text;
   @JsonKey(ignore: true)
-  _$AddTextPostEventCopyWith<_AddTextPostEvent> get copyWith =>
+  _$$AddTextPostEventImplCopyWith<_$AddTextPostEventImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$AttachFilePostEventCopyWith<$Res> {
-  factory _$AttachFilePostEventCopyWith(_AttachFilePostEvent value,
-          $Res Function(_AttachFilePostEvent) then) =
-      __$AttachFilePostEventCopyWithImpl<$Res>;
+abstract class _$$AttachFilePostEventImplCopyWith<$Res> {
+  factory _$$AttachFilePostEventImplCopyWith(_$AttachFilePostEventImpl value,
+          $Res Function(_$AttachFilePostEventImpl) then) =
+      __$$AttachFilePostEventImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({String path});
 }
 
 /// @nodoc
-class __$AttachFilePostEventCopyWithImpl<$Res>
-    extends _$PostEventCopyWithImpl<$Res>
-    implements _$AttachFilePostEventCopyWith<$Res> {
-  __$AttachFilePostEventCopyWithImpl(
-      _AttachFilePostEvent _value, $Res Function(_AttachFilePostEvent) _then)
-      : super(_value, (v) => _then(v as _AttachFilePostEvent));
+class __$$AttachFilePostEventImplCopyWithImpl<$Res>
+    extends _$PostEventCopyWithImpl<$Res, _$AttachFilePostEventImpl>
+    implements _$$AttachFilePostEventImplCopyWith<$Res> {
+  __$$AttachFilePostEventImplCopyWithImpl(_$AttachFilePostEventImpl _value,
+      $Res Function(_$AttachFilePostEventImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _AttachFilePostEvent get _value => super._value as _AttachFilePostEvent;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? path = freezed,
+    Object? path = null,
   }) {
-    return _then(_AttachFilePostEvent(
-      path: path == freezed
+    return _then(_$AttachFilePostEventImpl(
+      path: null == path
           ? _value.path
           : path // ignore: cast_nullable_to_non_nullable
               as String,
@@ -292,18 +265,13 @@ class __$AttachFilePostEventCopyWithImpl<$Res>
 
 /// @nodoc
 
-@Implements<_FileContainer>()
-@With<_HasTextEmitter>()
-@With<_AttachingFileEmitter>()
-@With<_HasTextAndFileEmitter>()
-@With<_ErrorEmitter>()
-class _$_AttachFilePostEvent extends _AttachFilePostEvent
+class _$AttachFilePostEventImpl extends _AttachFilePostEvent
     with
         _HasTextEmitter,
         _AttachingFileEmitter,
         _HasTextAndFileEmitter,
         _ErrorEmitter {
-  const _$_AttachFilePostEvent({required this.path}) : super._();
+  const _$AttachFilePostEventImpl({required this.path}) : super._();
 
   @override
   final String path;
@@ -317,18 +285,18 @@ class _$_AttachFilePostEvent extends _AttachFilePostEvent
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _AttachFilePostEvent &&
-            const DeepCollectionEquality().equals(other.path, path));
+            other is _$AttachFilePostEventImpl &&
+            (identical(other.path, path) || other.path == path));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(path));
+  int get hashCode => Object.hash(runtimeType, path);
 
   @JsonKey(ignore: true)
   @override
-  _$AttachFilePostEventCopyWith<_AttachFilePostEvent> get copyWith =>
-      __$AttachFilePostEventCopyWithImpl<_AttachFilePostEvent>(
+  @pragma('vm:prefer-inline')
+  _$$AttachFilePostEventImplCopyWith<_$AttachFilePostEventImpl> get copyWith =>
+      __$$AttachFilePostEventImplCopyWithImpl<_$AttachFilePostEventImpl>(
           this, _$identity);
 
   @override
@@ -344,9 +312,9 @@ class _$_AttachFilePostEvent extends _AttachFilePostEvent
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String text)? addText,
-    TResult Function(String path)? attachFile,
-    TResult Function()? send,
+    TResult? Function(String text)? addText,
+    TResult? Function(String path)? attachFile,
+    TResult? Function()? send,
   }) {
     return attachFile?.call(path);
   }
@@ -378,9 +346,9 @@ class _$_AttachFilePostEvent extends _AttachFilePostEvent
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_AddTextPostEvent value)? addText,
-    TResult Function(_AttachFilePostEvent value)? attachFile,
-    TResult Function(_SendPostEvent value)? send,
+    TResult? Function(_AddTextPostEvent value)? addText,
+    TResult? Function(_AttachFilePostEvent value)? attachFile,
+    TResult? Function(_SendPostEvent value)? send,
   }) {
     return attachFile?.call(this);
   }
@@ -407,49 +375,42 @@ abstract class _AttachFilePostEvent extends PostEvent
         _AttachingFileEmitter,
         _HasTextAndFileEmitter,
         _ErrorEmitter {
-  const factory _AttachFilePostEvent({required String path}) =
-      _$_AttachFilePostEvent;
+  const factory _AttachFilePostEvent({required final String path}) =
+      _$AttachFilePostEventImpl;
   const _AttachFilePostEvent._() : super._();
 
   String get path;
   @JsonKey(ignore: true)
-  _$AttachFilePostEventCopyWith<_AttachFilePostEvent> get copyWith =>
+  _$$AttachFilePostEventImplCopyWith<_$AttachFilePostEventImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$SendPostEventCopyWith<$Res> {
-  factory _$SendPostEventCopyWith(
-          _SendPostEvent value, $Res Function(_SendPostEvent) then) =
-      __$SendPostEventCopyWithImpl<$Res>;
+abstract class _$$SendPostEventImplCopyWith<$Res> {
+  factory _$$SendPostEventImplCopyWith(
+          _$SendPostEventImpl value, $Res Function(_$SendPostEventImpl) then) =
+      __$$SendPostEventImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$SendPostEventCopyWithImpl<$Res> extends _$PostEventCopyWithImpl<$Res>
-    implements _$SendPostEventCopyWith<$Res> {
-  __$SendPostEventCopyWithImpl(
-      _SendPostEvent _value, $Res Function(_SendPostEvent) _then)
-      : super(_value, (v) => _then(v as _SendPostEvent));
-
-  @override
-  _SendPostEvent get _value => super._value as _SendPostEvent;
+class __$$SendPostEventImplCopyWithImpl<$Res>
+    extends _$PostEventCopyWithImpl<$Res, _$SendPostEventImpl>
+    implements _$$SendPostEventImplCopyWith<$Res> {
+  __$$SendPostEventImplCopyWithImpl(
+      _$SendPostEventImpl _value, $Res Function(_$SendPostEventImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-@With<_HasTextAndFileEmitter>()
-@With<_SendingEmitter>()
-@With<_SentEmitter>()
-@With<_InitialStateEmitter>()
-@With<_ErrorEmitter>()
-class _$_SendPostEvent extends _SendPostEvent
+class _$SendPostEventImpl extends _SendPostEvent
     with
         _HasTextAndFileEmitter,
         _SendingEmitter,
         _SentEmitter,
         _InitialStateEmitter,
         _ErrorEmitter {
-  const _$_SendPostEvent() : super._();
+  const _$SendPostEventImpl() : super._();
 
   @override
   String toString() {
@@ -459,7 +420,7 @@ class _$_SendPostEvent extends _SendPostEvent
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _SendPostEvent);
+        (other.runtimeType == runtimeType && other is _$SendPostEventImpl);
   }
 
   @override
@@ -478,9 +439,9 @@ class _$_SendPostEvent extends _SendPostEvent
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(String text)? addText,
-    TResult Function(String path)? attachFile,
-    TResult Function()? send,
+    TResult? Function(String text)? addText,
+    TResult? Function(String path)? attachFile,
+    TResult? Function()? send,
   }) {
     return send?.call();
   }
@@ -512,9 +473,9 @@ class _$_SendPostEvent extends _SendPostEvent
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_AddTextPostEvent value)? addText,
-    TResult Function(_AttachFilePostEvent value)? attachFile,
-    TResult Function(_SendPostEvent value)? send,
+    TResult? Function(_AddTextPostEvent value)? addText,
+    TResult? Function(_AttachFilePostEvent value)? attachFile,
+    TResult? Function(_SendPostEvent value)? send,
   }) {
     return send?.call(this);
   }
@@ -541,70 +502,9 @@ abstract class _SendPostEvent extends PostEvent
         _SentEmitter,
         _InitialStateEmitter,
         _ErrorEmitter {
-  const factory _SendPostEvent() = _$_SendPostEvent;
+  const factory _SendPostEvent() = _$SendPostEventImpl;
   const _SendPostEvent._() : super._();
 }
-
-/// @nodoc
-class _$PostStateTearOff {
-  const _$PostStateTearOff();
-
-  _InitialPostState initial() {
-    return const _InitialPostState();
-  }
-
-  _AddingTextPostState addingText() {
-    return const _AddingTextPostState();
-  }
-
-  _HasTextPostState hasText({required String text}) {
-    return _HasTextPostState(
-      text: text,
-    );
-  }
-
-  _AttachingFilePostState attachingFile({required String text}) {
-    return _AttachingFilePostState(
-      text: text,
-    );
-  }
-
-  _HasTextAndFilePostState hasTextAndFile(
-      {required String text, required String path}) {
-    return _HasTextAndFilePostState(
-      text: text,
-      path: path,
-    );
-  }
-
-  _SendingPostState sending({required String text, required String path}) {
-    return _SendingPostState(
-      text: text,
-      path: path,
-    );
-  }
-
-  _SentPostState sent({required String text, required String path}) {
-    return _SentPostState(
-      text: text,
-      path: path,
-    );
-  }
-
-  _ErrorPostState error(
-      {String? text = '',
-      String? path = '',
-      String message = 'Произошла ошибка'}) {
-    return _ErrorPostState(
-      text: text,
-      path: path,
-      message: message,
-    );
-  }
-}
-
-/// @nodoc
-const $PostState = _$PostStateTearOff();
 
 /// @nodoc
 mixin _$PostState {
@@ -622,14 +522,14 @@ mixin _$PostState {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? addingText,
-    TResult Function(String text)? hasText,
-    TResult Function(String text)? attachingFile,
-    TResult Function(String text, String path)? hasTextAndFile,
-    TResult Function(String text, String path)? sending,
-    TResult Function(String text, String path)? sent,
-    TResult Function(String? text, String? path, String message)? error,
+    TResult? Function()? initial,
+    TResult? Function()? addingText,
+    TResult? Function(String text)? hasText,
+    TResult? Function(String text)? attachingFile,
+    TResult? Function(String text, String path)? hasTextAndFile,
+    TResult? Function(String text, String path)? sending,
+    TResult? Function(String text, String path)? sent,
+    TResult? Function(String? text, String? path, String message)? error,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -659,14 +559,14 @@ mixin _$PostState {
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_InitialPostState value)? initial,
-    TResult Function(_AddingTextPostState value)? addingText,
-    TResult Function(_HasTextPostState value)? hasText,
-    TResult Function(_AttachingFilePostState value)? attachingFile,
-    TResult Function(_HasTextAndFilePostState value)? hasTextAndFile,
-    TResult Function(_SendingPostState value)? sending,
-    TResult Function(_SentPostState value)? sent,
-    TResult Function(_ErrorPostState value)? error,
+    TResult? Function(_InitialPostState value)? initial,
+    TResult? Function(_AddingTextPostState value)? addingText,
+    TResult? Function(_HasTextPostState value)? hasText,
+    TResult? Function(_AttachingFilePostState value)? attachingFile,
+    TResult? Function(_HasTextAndFilePostState value)? hasTextAndFile,
+    TResult? Function(_SendingPostState value)? sending,
+    TResult? Function(_SentPostState value)? sent,
+    TResult? Function(_ErrorPostState value)? error,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -687,41 +587,40 @@ mixin _$PostState {
 /// @nodoc
 abstract class $PostStateCopyWith<$Res> {
   factory $PostStateCopyWith(PostState value, $Res Function(PostState) then) =
-      _$PostStateCopyWithImpl<$Res>;
+      _$PostStateCopyWithImpl<$Res, PostState>;
 }
 
 /// @nodoc
-class _$PostStateCopyWithImpl<$Res> implements $PostStateCopyWith<$Res> {
+class _$PostStateCopyWithImpl<$Res, $Val extends PostState>
+    implements $PostStateCopyWith<$Res> {
   _$PostStateCopyWithImpl(this._value, this._then);
 
-  final PostState _value;
   // ignore: unused_field
-  final $Res Function(PostState) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 }
 
 /// @nodoc
-abstract class _$InitialPostStateCopyWith<$Res> {
-  factory _$InitialPostStateCopyWith(
-          _InitialPostState value, $Res Function(_InitialPostState) then) =
-      __$InitialPostStateCopyWithImpl<$Res>;
+abstract class _$$InitialPostStateImplCopyWith<$Res> {
+  factory _$$InitialPostStateImplCopyWith(_$InitialPostStateImpl value,
+          $Res Function(_$InitialPostStateImpl) then) =
+      __$$InitialPostStateImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$InitialPostStateCopyWithImpl<$Res>
-    extends _$PostStateCopyWithImpl<$Res>
-    implements _$InitialPostStateCopyWith<$Res> {
-  __$InitialPostStateCopyWithImpl(
-      _InitialPostState _value, $Res Function(_InitialPostState) _then)
-      : super(_value, (v) => _then(v as _InitialPostState));
-
-  @override
-  _InitialPostState get _value => super._value as _InitialPostState;
+class __$$InitialPostStateImplCopyWithImpl<$Res>
+    extends _$PostStateCopyWithImpl<$Res, _$InitialPostStateImpl>
+    implements _$$InitialPostStateImplCopyWith<$Res> {
+  __$$InitialPostStateImplCopyWithImpl(_$InitialPostStateImpl _value,
+      $Res Function(_$InitialPostStateImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_InitialPostState extends _InitialPostState {
-  const _$_InitialPostState() : super._();
+class _$InitialPostStateImpl extends _InitialPostState {
+  const _$InitialPostStateImpl() : super._();
 
   @override
   String toString() {
@@ -731,7 +630,7 @@ class _$_InitialPostState extends _InitialPostState {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _InitialPostState);
+        (other.runtimeType == runtimeType && other is _$InitialPostStateImpl);
   }
 
   @override
@@ -755,14 +654,14 @@ class _$_InitialPostState extends _InitialPostState {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? addingText,
-    TResult Function(String text)? hasText,
-    TResult Function(String text)? attachingFile,
-    TResult Function(String text, String path)? hasTextAndFile,
-    TResult Function(String text, String path)? sending,
-    TResult Function(String text, String path)? sent,
-    TResult Function(String? text, String? path, String message)? error,
+    TResult? Function()? initial,
+    TResult? Function()? addingText,
+    TResult? Function(String text)? hasText,
+    TResult? Function(String text)? attachingFile,
+    TResult? Function(String text, String path)? hasTextAndFile,
+    TResult? Function(String text, String path)? sending,
+    TResult? Function(String text, String path)? sent,
+    TResult? Function(String? text, String? path, String message)? error,
   }) {
     return initial?.call();
   }
@@ -804,14 +703,14 @@ class _$_InitialPostState extends _InitialPostState {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_InitialPostState value)? initial,
-    TResult Function(_AddingTextPostState value)? addingText,
-    TResult Function(_HasTextPostState value)? hasText,
-    TResult Function(_AttachingFilePostState value)? attachingFile,
-    TResult Function(_HasTextAndFilePostState value)? hasTextAndFile,
-    TResult Function(_SendingPostState value)? sending,
-    TResult Function(_SentPostState value)? sent,
-    TResult Function(_ErrorPostState value)? error,
+    TResult? Function(_InitialPostState value)? initial,
+    TResult? Function(_AddingTextPostState value)? addingText,
+    TResult? Function(_HasTextPostState value)? hasText,
+    TResult? Function(_AttachingFilePostState value)? attachingFile,
+    TResult? Function(_HasTextAndFilePostState value)? hasTextAndFile,
+    TResult? Function(_SendingPostState value)? sending,
+    TResult? Function(_SentPostState value)? sent,
+    TResult? Function(_ErrorPostState value)? error,
   }) {
     return initial?.call(this);
   }
@@ -837,33 +736,30 @@ class _$_InitialPostState extends _InitialPostState {
 }
 
 abstract class _InitialPostState extends PostState {
-  const factory _InitialPostState() = _$_InitialPostState;
+  const factory _InitialPostState() = _$InitialPostStateImpl;
   const _InitialPostState._() : super._();
 }
 
 /// @nodoc
-abstract class _$AddingTextPostStateCopyWith<$Res> {
-  factory _$AddingTextPostStateCopyWith(_AddingTextPostState value,
-          $Res Function(_AddingTextPostState) then) =
-      __$AddingTextPostStateCopyWithImpl<$Res>;
+abstract class _$$AddingTextPostStateImplCopyWith<$Res> {
+  factory _$$AddingTextPostStateImplCopyWith(_$AddingTextPostStateImpl value,
+          $Res Function(_$AddingTextPostStateImpl) then) =
+      __$$AddingTextPostStateImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$AddingTextPostStateCopyWithImpl<$Res>
-    extends _$PostStateCopyWithImpl<$Res>
-    implements _$AddingTextPostStateCopyWith<$Res> {
-  __$AddingTextPostStateCopyWithImpl(
-      _AddingTextPostState _value, $Res Function(_AddingTextPostState) _then)
-      : super(_value, (v) => _then(v as _AddingTextPostState));
-
-  @override
-  _AddingTextPostState get _value => super._value as _AddingTextPostState;
+class __$$AddingTextPostStateImplCopyWithImpl<$Res>
+    extends _$PostStateCopyWithImpl<$Res, _$AddingTextPostStateImpl>
+    implements _$$AddingTextPostStateImplCopyWith<$Res> {
+  __$$AddingTextPostStateImplCopyWithImpl(_$AddingTextPostStateImpl _value,
+      $Res Function(_$AddingTextPostStateImpl) _then)
+      : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_AddingTextPostState extends _AddingTextPostState {
-  const _$_AddingTextPostState() : super._();
+class _$AddingTextPostStateImpl extends _AddingTextPostState {
+  const _$AddingTextPostStateImpl() : super._();
 
   @override
   String toString() {
@@ -873,7 +769,8 @@ class _$_AddingTextPostState extends _AddingTextPostState {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _AddingTextPostState);
+        (other.runtimeType == runtimeType &&
+            other is _$AddingTextPostStateImpl);
   }
 
   @override
@@ -897,14 +794,14 @@ class _$_AddingTextPostState extends _AddingTextPostState {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? addingText,
-    TResult Function(String text)? hasText,
-    TResult Function(String text)? attachingFile,
-    TResult Function(String text, String path)? hasTextAndFile,
-    TResult Function(String text, String path)? sending,
-    TResult Function(String text, String path)? sent,
-    TResult Function(String? text, String? path, String message)? error,
+    TResult? Function()? initial,
+    TResult? Function()? addingText,
+    TResult? Function(String text)? hasText,
+    TResult? Function(String text)? attachingFile,
+    TResult? Function(String text, String path)? hasTextAndFile,
+    TResult? Function(String text, String path)? sending,
+    TResult? Function(String text, String path)? sent,
+    TResult? Function(String? text, String? path, String message)? error,
   }) {
     return addingText?.call();
   }
@@ -946,14 +843,14 @@ class _$_AddingTextPostState extends _AddingTextPostState {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_InitialPostState value)? initial,
-    TResult Function(_AddingTextPostState value)? addingText,
-    TResult Function(_HasTextPostState value)? hasText,
-    TResult Function(_AttachingFilePostState value)? attachingFile,
-    TResult Function(_HasTextAndFilePostState value)? hasTextAndFile,
-    TResult Function(_SendingPostState value)? sending,
-    TResult Function(_SentPostState value)? sent,
-    TResult Function(_ErrorPostState value)? error,
+    TResult? Function(_InitialPostState value)? initial,
+    TResult? Function(_AddingTextPostState value)? addingText,
+    TResult? Function(_HasTextPostState value)? hasText,
+    TResult? Function(_AttachingFilePostState value)? attachingFile,
+    TResult? Function(_HasTextAndFilePostState value)? hasTextAndFile,
+    TResult? Function(_SendingPostState value)? sending,
+    TResult? Function(_SentPostState value)? sent,
+    TResult? Function(_ErrorPostState value)? error,
   }) {
     return addingText?.call(this);
   }
@@ -979,35 +876,34 @@ class _$_AddingTextPostState extends _AddingTextPostState {
 }
 
 abstract class _AddingTextPostState extends PostState {
-  const factory _AddingTextPostState() = _$_AddingTextPostState;
+  const factory _AddingTextPostState() = _$AddingTextPostStateImpl;
   const _AddingTextPostState._() : super._();
 }
 
 /// @nodoc
-abstract class _$HasTextPostStateCopyWith<$Res> {
-  factory _$HasTextPostStateCopyWith(
-          _HasTextPostState value, $Res Function(_HasTextPostState) then) =
-      __$HasTextPostStateCopyWithImpl<$Res>;
+abstract class _$$HasTextPostStateImplCopyWith<$Res> {
+  factory _$$HasTextPostStateImplCopyWith(_$HasTextPostStateImpl value,
+          $Res Function(_$HasTextPostStateImpl) then) =
+      __$$HasTextPostStateImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({String text});
 }
 
 /// @nodoc
-class __$HasTextPostStateCopyWithImpl<$Res>
-    extends _$PostStateCopyWithImpl<$Res>
-    implements _$HasTextPostStateCopyWith<$Res> {
-  __$HasTextPostStateCopyWithImpl(
-      _HasTextPostState _value, $Res Function(_HasTextPostState) _then)
-      : super(_value, (v) => _then(v as _HasTextPostState));
+class __$$HasTextPostStateImplCopyWithImpl<$Res>
+    extends _$PostStateCopyWithImpl<$Res, _$HasTextPostStateImpl>
+    implements _$$HasTextPostStateImplCopyWith<$Res> {
+  __$$HasTextPostStateImplCopyWithImpl(_$HasTextPostStateImpl _value,
+      $Res Function(_$HasTextPostStateImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _HasTextPostState get _value => super._value as _HasTextPostState;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? text = freezed,
+    Object? text = null,
   }) {
-    return _then(_HasTextPostState(
-      text: text == freezed
+    return _then(_$HasTextPostStateImpl(
+      text: null == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
               as String,
@@ -1017,8 +913,8 @@ class __$HasTextPostStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_HasTextPostState extends _HasTextPostState {
-  const _$_HasTextPostState({required this.text}) : super._();
+class _$HasTextPostStateImpl extends _HasTextPostState {
+  const _$HasTextPostStateImpl({required this.text}) : super._();
 
   @override
   final String text;
@@ -1032,18 +928,19 @@ class _$_HasTextPostState extends _HasTextPostState {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _HasTextPostState &&
-            const DeepCollectionEquality().equals(other.text, text));
+            other is _$HasTextPostStateImpl &&
+            (identical(other.text, text) || other.text == text));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(text));
+  int get hashCode => Object.hash(runtimeType, text);
 
   @JsonKey(ignore: true)
   @override
-  _$HasTextPostStateCopyWith<_HasTextPostState> get copyWith =>
-      __$HasTextPostStateCopyWithImpl<_HasTextPostState>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$HasTextPostStateImplCopyWith<_$HasTextPostStateImpl> get copyWith =>
+      __$$HasTextPostStateImplCopyWithImpl<_$HasTextPostStateImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1063,14 +960,14 @@ class _$_HasTextPostState extends _HasTextPostState {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? addingText,
-    TResult Function(String text)? hasText,
-    TResult Function(String text)? attachingFile,
-    TResult Function(String text, String path)? hasTextAndFile,
-    TResult Function(String text, String path)? sending,
-    TResult Function(String text, String path)? sent,
-    TResult Function(String? text, String? path, String message)? error,
+    TResult? Function()? initial,
+    TResult? Function()? addingText,
+    TResult? Function(String text)? hasText,
+    TResult? Function(String text)? attachingFile,
+    TResult? Function(String text, String path)? hasTextAndFile,
+    TResult? Function(String text, String path)? sending,
+    TResult? Function(String text, String path)? sent,
+    TResult? Function(String? text, String? path, String message)? error,
   }) {
     return hasText?.call(text);
   }
@@ -1112,14 +1009,14 @@ class _$_HasTextPostState extends _HasTextPostState {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_InitialPostState value)? initial,
-    TResult Function(_AddingTextPostState value)? addingText,
-    TResult Function(_HasTextPostState value)? hasText,
-    TResult Function(_AttachingFilePostState value)? attachingFile,
-    TResult Function(_HasTextAndFilePostState value)? hasTextAndFile,
-    TResult Function(_SendingPostState value)? sending,
-    TResult Function(_SentPostState value)? sent,
-    TResult Function(_ErrorPostState value)? error,
+    TResult? Function(_InitialPostState value)? initial,
+    TResult? Function(_AddingTextPostState value)? addingText,
+    TResult? Function(_HasTextPostState value)? hasText,
+    TResult? Function(_AttachingFilePostState value)? attachingFile,
+    TResult? Function(_HasTextAndFilePostState value)? hasTextAndFile,
+    TResult? Function(_SendingPostState value)? sending,
+    TResult? Function(_SentPostState value)? sent,
+    TResult? Function(_ErrorPostState value)? error,
   }) {
     return hasText?.call(this);
   }
@@ -1145,40 +1042,42 @@ class _$_HasTextPostState extends _HasTextPostState {
 }
 
 abstract class _HasTextPostState extends PostState {
-  const factory _HasTextPostState({required String text}) = _$_HasTextPostState;
+  const factory _HasTextPostState({required final String text}) =
+      _$HasTextPostStateImpl;
   const _HasTextPostState._() : super._();
 
   String get text;
   @JsonKey(ignore: true)
-  _$HasTextPostStateCopyWith<_HasTextPostState> get copyWith =>
+  _$$HasTextPostStateImplCopyWith<_$HasTextPostStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$AttachingFilePostStateCopyWith<$Res> {
-  factory _$AttachingFilePostStateCopyWith(_AttachingFilePostState value,
-          $Res Function(_AttachingFilePostState) then) =
-      __$AttachingFilePostStateCopyWithImpl<$Res>;
+abstract class _$$AttachingFilePostStateImplCopyWith<$Res> {
+  factory _$$AttachingFilePostStateImplCopyWith(
+          _$AttachingFilePostStateImpl value,
+          $Res Function(_$AttachingFilePostStateImpl) then) =
+      __$$AttachingFilePostStateImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({String text});
 }
 
 /// @nodoc
-class __$AttachingFilePostStateCopyWithImpl<$Res>
-    extends _$PostStateCopyWithImpl<$Res>
-    implements _$AttachingFilePostStateCopyWith<$Res> {
-  __$AttachingFilePostStateCopyWithImpl(_AttachingFilePostState _value,
-      $Res Function(_AttachingFilePostState) _then)
-      : super(_value, (v) => _then(v as _AttachingFilePostState));
+class __$$AttachingFilePostStateImplCopyWithImpl<$Res>
+    extends _$PostStateCopyWithImpl<$Res, _$AttachingFilePostStateImpl>
+    implements _$$AttachingFilePostStateImplCopyWith<$Res> {
+  __$$AttachingFilePostStateImplCopyWithImpl(
+      _$AttachingFilePostStateImpl _value,
+      $Res Function(_$AttachingFilePostStateImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _AttachingFilePostState get _value => super._value as _AttachingFilePostState;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? text = freezed,
+    Object? text = null,
   }) {
-    return _then(_AttachingFilePostState(
-      text: text == freezed
+    return _then(_$AttachingFilePostStateImpl(
+      text: null == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
               as String,
@@ -1188,8 +1087,8 @@ class __$AttachingFilePostStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_AttachingFilePostState extends _AttachingFilePostState {
-  const _$_AttachingFilePostState({required this.text}) : super._();
+class _$AttachingFilePostStateImpl extends _AttachingFilePostState {
+  const _$AttachingFilePostStateImpl({required this.text}) : super._();
 
   @override
   final String text;
@@ -1203,19 +1102,19 @@ class _$_AttachingFilePostState extends _AttachingFilePostState {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _AttachingFilePostState &&
-            const DeepCollectionEquality().equals(other.text, text));
+            other is _$AttachingFilePostStateImpl &&
+            (identical(other.text, text) || other.text == text));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(text));
+  int get hashCode => Object.hash(runtimeType, text);
 
   @JsonKey(ignore: true)
   @override
-  _$AttachingFilePostStateCopyWith<_AttachingFilePostState> get copyWith =>
-      __$AttachingFilePostStateCopyWithImpl<_AttachingFilePostState>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$AttachingFilePostStateImplCopyWith<_$AttachingFilePostStateImpl>
+      get copyWith => __$$AttachingFilePostStateImplCopyWithImpl<
+          _$AttachingFilePostStateImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1235,14 +1134,14 @@ class _$_AttachingFilePostState extends _AttachingFilePostState {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? addingText,
-    TResult Function(String text)? hasText,
-    TResult Function(String text)? attachingFile,
-    TResult Function(String text, String path)? hasTextAndFile,
-    TResult Function(String text, String path)? sending,
-    TResult Function(String text, String path)? sent,
-    TResult Function(String? text, String? path, String message)? error,
+    TResult? Function()? initial,
+    TResult? Function()? addingText,
+    TResult? Function(String text)? hasText,
+    TResult? Function(String text)? attachingFile,
+    TResult? Function(String text, String path)? hasTextAndFile,
+    TResult? Function(String text, String path)? sending,
+    TResult? Function(String text, String path)? sent,
+    TResult? Function(String? text, String? path, String message)? error,
   }) {
     return attachingFile?.call(text);
   }
@@ -1284,14 +1183,14 @@ class _$_AttachingFilePostState extends _AttachingFilePostState {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_InitialPostState value)? initial,
-    TResult Function(_AddingTextPostState value)? addingText,
-    TResult Function(_HasTextPostState value)? hasText,
-    TResult Function(_AttachingFilePostState value)? attachingFile,
-    TResult Function(_HasTextAndFilePostState value)? hasTextAndFile,
-    TResult Function(_SendingPostState value)? sending,
-    TResult Function(_SentPostState value)? sent,
-    TResult Function(_ErrorPostState value)? error,
+    TResult? Function(_InitialPostState value)? initial,
+    TResult? Function(_AddingTextPostState value)? addingText,
+    TResult? Function(_HasTextPostState value)? hasText,
+    TResult? Function(_AttachingFilePostState value)? attachingFile,
+    TResult? Function(_HasTextAndFilePostState value)? hasTextAndFile,
+    TResult? Function(_SendingPostState value)? sending,
+    TResult? Function(_SentPostState value)? sent,
+    TResult? Function(_ErrorPostState value)? error,
   }) {
     return attachingFile?.call(this);
   }
@@ -1317,47 +1216,47 @@ class _$_AttachingFilePostState extends _AttachingFilePostState {
 }
 
 abstract class _AttachingFilePostState extends PostState {
-  const factory _AttachingFilePostState({required String text}) =
-      _$_AttachingFilePostState;
+  const factory _AttachingFilePostState({required final String text}) =
+      _$AttachingFilePostStateImpl;
   const _AttachingFilePostState._() : super._();
 
   String get text;
   @JsonKey(ignore: true)
-  _$AttachingFilePostStateCopyWith<_AttachingFilePostState> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$AttachingFilePostStateImplCopyWith<_$AttachingFilePostStateImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$HasTextAndFilePostStateCopyWith<$Res> {
-  factory _$HasTextAndFilePostStateCopyWith(_HasTextAndFilePostState value,
-          $Res Function(_HasTextAndFilePostState) then) =
-      __$HasTextAndFilePostStateCopyWithImpl<$Res>;
+abstract class _$$HasTextAndFilePostStateImplCopyWith<$Res> {
+  factory _$$HasTextAndFilePostStateImplCopyWith(
+          _$HasTextAndFilePostStateImpl value,
+          $Res Function(_$HasTextAndFilePostStateImpl) then) =
+      __$$HasTextAndFilePostStateImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({String text, String path});
 }
 
 /// @nodoc
-class __$HasTextAndFilePostStateCopyWithImpl<$Res>
-    extends _$PostStateCopyWithImpl<$Res>
-    implements _$HasTextAndFilePostStateCopyWith<$Res> {
-  __$HasTextAndFilePostStateCopyWithImpl(_HasTextAndFilePostState _value,
-      $Res Function(_HasTextAndFilePostState) _then)
-      : super(_value, (v) => _then(v as _HasTextAndFilePostState));
+class __$$HasTextAndFilePostStateImplCopyWithImpl<$Res>
+    extends _$PostStateCopyWithImpl<$Res, _$HasTextAndFilePostStateImpl>
+    implements _$$HasTextAndFilePostStateImplCopyWith<$Res> {
+  __$$HasTextAndFilePostStateImplCopyWithImpl(
+      _$HasTextAndFilePostStateImpl _value,
+      $Res Function(_$HasTextAndFilePostStateImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _HasTextAndFilePostState get _value =>
-      super._value as _HasTextAndFilePostState;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? text = freezed,
-    Object? path = freezed,
+    Object? text = null,
+    Object? path = null,
   }) {
-    return _then(_HasTextAndFilePostState(
-      text: text == freezed
+    return _then(_$HasTextAndFilePostStateImpl(
+      text: null == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
               as String,
-      path: path == freezed
+      path: null == path
           ? _value.path
           : path // ignore: cast_nullable_to_non_nullable
               as String,
@@ -1367,8 +1266,8 @@ class __$HasTextAndFilePostStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_HasTextAndFilePostState extends _HasTextAndFilePostState {
-  const _$_HasTextAndFilePostState({required this.text, required this.path})
+class _$HasTextAndFilePostStateImpl extends _HasTextAndFilePostState {
+  const _$HasTextAndFilePostStateImpl({required this.text, required this.path})
       : super._();
 
   @override
@@ -1385,22 +1284,20 @@ class _$_HasTextAndFilePostState extends _HasTextAndFilePostState {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _HasTextAndFilePostState &&
-            const DeepCollectionEquality().equals(other.text, text) &&
-            const DeepCollectionEquality().equals(other.path, path));
+            other is _$HasTextAndFilePostStateImpl &&
+            (identical(other.text, text) || other.text == text) &&
+            (identical(other.path, path) || other.path == path));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(text),
-      const DeepCollectionEquality().hash(path));
+  int get hashCode => Object.hash(runtimeType, text, path);
 
   @JsonKey(ignore: true)
   @override
-  _$HasTextAndFilePostStateCopyWith<_HasTextAndFilePostState> get copyWith =>
-      __$HasTextAndFilePostStateCopyWithImpl<_HasTextAndFilePostState>(
-          this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$HasTextAndFilePostStateImplCopyWith<_$HasTextAndFilePostStateImpl>
+      get copyWith => __$$HasTextAndFilePostStateImplCopyWithImpl<
+          _$HasTextAndFilePostStateImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1420,14 +1317,14 @@ class _$_HasTextAndFilePostState extends _HasTextAndFilePostState {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? addingText,
-    TResult Function(String text)? hasText,
-    TResult Function(String text)? attachingFile,
-    TResult Function(String text, String path)? hasTextAndFile,
-    TResult Function(String text, String path)? sending,
-    TResult Function(String text, String path)? sent,
-    TResult Function(String? text, String? path, String message)? error,
+    TResult? Function()? initial,
+    TResult? Function()? addingText,
+    TResult? Function(String text)? hasText,
+    TResult? Function(String text)? attachingFile,
+    TResult? Function(String text, String path)? hasTextAndFile,
+    TResult? Function(String text, String path)? sending,
+    TResult? Function(String text, String path)? sent,
+    TResult? Function(String? text, String? path, String message)? error,
   }) {
     return hasTextAndFile?.call(text, path);
   }
@@ -1469,14 +1366,14 @@ class _$_HasTextAndFilePostState extends _HasTextAndFilePostState {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_InitialPostState value)? initial,
-    TResult Function(_AddingTextPostState value)? addingText,
-    TResult Function(_HasTextPostState value)? hasText,
-    TResult Function(_AttachingFilePostState value)? attachingFile,
-    TResult Function(_HasTextAndFilePostState value)? hasTextAndFile,
-    TResult Function(_SendingPostState value)? sending,
-    TResult Function(_SentPostState value)? sent,
-    TResult Function(_ErrorPostState value)? error,
+    TResult? Function(_InitialPostState value)? initial,
+    TResult? Function(_AddingTextPostState value)? addingText,
+    TResult? Function(_HasTextPostState value)? hasText,
+    TResult? Function(_AttachingFilePostState value)? attachingFile,
+    TResult? Function(_HasTextAndFilePostState value)? hasTextAndFile,
+    TResult? Function(_SendingPostState value)? sending,
+    TResult? Function(_SentPostState value)? sent,
+    TResult? Function(_ErrorPostState value)? error,
   }) {
     return hasTextAndFile?.call(this);
   }
@@ -1503,47 +1400,46 @@ class _$_HasTextAndFilePostState extends _HasTextAndFilePostState {
 
 abstract class _HasTextAndFilePostState extends PostState {
   const factory _HasTextAndFilePostState(
-      {required String text,
-      required String path}) = _$_HasTextAndFilePostState;
+      {required final String text,
+      required final String path}) = _$HasTextAndFilePostStateImpl;
   const _HasTextAndFilePostState._() : super._();
 
   String get text;
   String get path;
   @JsonKey(ignore: true)
-  _$HasTextAndFilePostStateCopyWith<_HasTextAndFilePostState> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$HasTextAndFilePostStateImplCopyWith<_$HasTextAndFilePostStateImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$SendingPostStateCopyWith<$Res> {
-  factory _$SendingPostStateCopyWith(
-          _SendingPostState value, $Res Function(_SendingPostState) then) =
-      __$SendingPostStateCopyWithImpl<$Res>;
+abstract class _$$SendingPostStateImplCopyWith<$Res> {
+  factory _$$SendingPostStateImplCopyWith(_$SendingPostStateImpl value,
+          $Res Function(_$SendingPostStateImpl) then) =
+      __$$SendingPostStateImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({String text, String path});
 }
 
 /// @nodoc
-class __$SendingPostStateCopyWithImpl<$Res>
-    extends _$PostStateCopyWithImpl<$Res>
-    implements _$SendingPostStateCopyWith<$Res> {
-  __$SendingPostStateCopyWithImpl(
-      _SendingPostState _value, $Res Function(_SendingPostState) _then)
-      : super(_value, (v) => _then(v as _SendingPostState));
+class __$$SendingPostStateImplCopyWithImpl<$Res>
+    extends _$PostStateCopyWithImpl<$Res, _$SendingPostStateImpl>
+    implements _$$SendingPostStateImplCopyWith<$Res> {
+  __$$SendingPostStateImplCopyWithImpl(_$SendingPostStateImpl _value,
+      $Res Function(_$SendingPostStateImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _SendingPostState get _value => super._value as _SendingPostState;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? text = freezed,
-    Object? path = freezed,
+    Object? text = null,
+    Object? path = null,
   }) {
-    return _then(_SendingPostState(
-      text: text == freezed
+    return _then(_$SendingPostStateImpl(
+      text: null == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
               as String,
-      path: path == freezed
+      path: null == path
           ? _value.path
           : path // ignore: cast_nullable_to_non_nullable
               as String,
@@ -1553,8 +1449,8 @@ class __$SendingPostStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_SendingPostState extends _SendingPostState {
-  const _$_SendingPostState({required this.text, required this.path})
+class _$SendingPostStateImpl extends _SendingPostState {
+  const _$SendingPostStateImpl({required this.text, required this.path})
       : super._();
 
   @override
@@ -1571,21 +1467,20 @@ class _$_SendingPostState extends _SendingPostState {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _SendingPostState &&
-            const DeepCollectionEquality().equals(other.text, text) &&
-            const DeepCollectionEquality().equals(other.path, path));
+            other is _$SendingPostStateImpl &&
+            (identical(other.text, text) || other.text == text) &&
+            (identical(other.path, path) || other.path == path));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(text),
-      const DeepCollectionEquality().hash(path));
+  int get hashCode => Object.hash(runtimeType, text, path);
 
   @JsonKey(ignore: true)
   @override
-  _$SendingPostStateCopyWith<_SendingPostState> get copyWith =>
-      __$SendingPostStateCopyWithImpl<_SendingPostState>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$SendingPostStateImplCopyWith<_$SendingPostStateImpl> get copyWith =>
+      __$$SendingPostStateImplCopyWithImpl<_$SendingPostStateImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1605,14 +1500,14 @@ class _$_SendingPostState extends _SendingPostState {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? addingText,
-    TResult Function(String text)? hasText,
-    TResult Function(String text)? attachingFile,
-    TResult Function(String text, String path)? hasTextAndFile,
-    TResult Function(String text, String path)? sending,
-    TResult Function(String text, String path)? sent,
-    TResult Function(String? text, String? path, String message)? error,
+    TResult? Function()? initial,
+    TResult? Function()? addingText,
+    TResult? Function(String text)? hasText,
+    TResult? Function(String text)? attachingFile,
+    TResult? Function(String text, String path)? hasTextAndFile,
+    TResult? Function(String text, String path)? sending,
+    TResult? Function(String text, String path)? sent,
+    TResult? Function(String? text, String? path, String message)? error,
   }) {
     return sending?.call(text, path);
   }
@@ -1654,14 +1549,14 @@ class _$_SendingPostState extends _SendingPostState {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_InitialPostState value)? initial,
-    TResult Function(_AddingTextPostState value)? addingText,
-    TResult Function(_HasTextPostState value)? hasText,
-    TResult Function(_AttachingFilePostState value)? attachingFile,
-    TResult Function(_HasTextAndFilePostState value)? hasTextAndFile,
-    TResult Function(_SendingPostState value)? sending,
-    TResult Function(_SentPostState value)? sent,
-    TResult Function(_ErrorPostState value)? error,
+    TResult? Function(_InitialPostState value)? initial,
+    TResult? Function(_AddingTextPostState value)? addingText,
+    TResult? Function(_HasTextPostState value)? hasText,
+    TResult? Function(_AttachingFilePostState value)? attachingFile,
+    TResult? Function(_HasTextAndFilePostState value)? hasTextAndFile,
+    TResult? Function(_SendingPostState value)? sending,
+    TResult? Function(_SentPostState value)? sent,
+    TResult? Function(_ErrorPostState value)? error,
   }) {
     return sending?.call(this);
   }
@@ -1688,45 +1583,46 @@ class _$_SendingPostState extends _SendingPostState {
 
 abstract class _SendingPostState extends PostState {
   const factory _SendingPostState(
-      {required String text, required String path}) = _$_SendingPostState;
+      {required final String text,
+      required final String path}) = _$SendingPostStateImpl;
   const _SendingPostState._() : super._();
 
   String get text;
   String get path;
   @JsonKey(ignore: true)
-  _$SendingPostStateCopyWith<_SendingPostState> get copyWith =>
+  _$$SendingPostStateImplCopyWith<_$SendingPostStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$SentPostStateCopyWith<$Res> {
-  factory _$SentPostStateCopyWith(
-          _SentPostState value, $Res Function(_SentPostState) then) =
-      __$SentPostStateCopyWithImpl<$Res>;
+abstract class _$$SentPostStateImplCopyWith<$Res> {
+  factory _$$SentPostStateImplCopyWith(
+          _$SentPostStateImpl value, $Res Function(_$SentPostStateImpl) then) =
+      __$$SentPostStateImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({String text, String path});
 }
 
 /// @nodoc
-class __$SentPostStateCopyWithImpl<$Res> extends _$PostStateCopyWithImpl<$Res>
-    implements _$SentPostStateCopyWith<$Res> {
-  __$SentPostStateCopyWithImpl(
-      _SentPostState _value, $Res Function(_SentPostState) _then)
-      : super(_value, (v) => _then(v as _SentPostState));
+class __$$SentPostStateImplCopyWithImpl<$Res>
+    extends _$PostStateCopyWithImpl<$Res, _$SentPostStateImpl>
+    implements _$$SentPostStateImplCopyWith<$Res> {
+  __$$SentPostStateImplCopyWithImpl(
+      _$SentPostStateImpl _value, $Res Function(_$SentPostStateImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _SentPostState get _value => super._value as _SentPostState;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? text = freezed,
-    Object? path = freezed,
+    Object? text = null,
+    Object? path = null,
   }) {
-    return _then(_SentPostState(
-      text: text == freezed
+    return _then(_$SentPostStateImpl(
+      text: null == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
               as String,
-      path: path == freezed
+      path: null == path
           ? _value.path
           : path // ignore: cast_nullable_to_non_nullable
               as String,
@@ -1736,8 +1632,9 @@ class __$SentPostStateCopyWithImpl<$Res> extends _$PostStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_SentPostState extends _SentPostState {
-  const _$_SentPostState({required this.text, required this.path}) : super._();
+class _$SentPostStateImpl extends _SentPostState {
+  const _$SentPostStateImpl({required this.text, required this.path})
+      : super._();
 
   @override
   final String text;
@@ -1753,21 +1650,19 @@ class _$_SentPostState extends _SentPostState {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _SentPostState &&
-            const DeepCollectionEquality().equals(other.text, text) &&
-            const DeepCollectionEquality().equals(other.path, path));
+            other is _$SentPostStateImpl &&
+            (identical(other.text, text) || other.text == text) &&
+            (identical(other.path, path) || other.path == path));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(text),
-      const DeepCollectionEquality().hash(path));
+  int get hashCode => Object.hash(runtimeType, text, path);
 
   @JsonKey(ignore: true)
   @override
-  _$SentPostStateCopyWith<_SentPostState> get copyWith =>
-      __$SentPostStateCopyWithImpl<_SentPostState>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$SentPostStateImplCopyWith<_$SentPostStateImpl> get copyWith =>
+      __$$SentPostStateImplCopyWithImpl<_$SentPostStateImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1787,14 +1682,14 @@ class _$_SentPostState extends _SentPostState {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? addingText,
-    TResult Function(String text)? hasText,
-    TResult Function(String text)? attachingFile,
-    TResult Function(String text, String path)? hasTextAndFile,
-    TResult Function(String text, String path)? sending,
-    TResult Function(String text, String path)? sent,
-    TResult Function(String? text, String? path, String message)? error,
+    TResult? Function()? initial,
+    TResult? Function()? addingText,
+    TResult? Function(String text)? hasText,
+    TResult? Function(String text)? attachingFile,
+    TResult? Function(String text, String path)? hasTextAndFile,
+    TResult? Function(String text, String path)? sending,
+    TResult? Function(String text, String path)? sent,
+    TResult? Function(String? text, String? path, String message)? error,
   }) {
     return sent?.call(text, path);
   }
@@ -1836,14 +1731,14 @@ class _$_SentPostState extends _SentPostState {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_InitialPostState value)? initial,
-    TResult Function(_AddingTextPostState value)? addingText,
-    TResult Function(_HasTextPostState value)? hasText,
-    TResult Function(_AttachingFilePostState value)? attachingFile,
-    TResult Function(_HasTextAndFilePostState value)? hasTextAndFile,
-    TResult Function(_SendingPostState value)? sending,
-    TResult Function(_SentPostState value)? sent,
-    TResult Function(_ErrorPostState value)? error,
+    TResult? Function(_InitialPostState value)? initial,
+    TResult? Function(_AddingTextPostState value)? addingText,
+    TResult? Function(_HasTextPostState value)? hasText,
+    TResult? Function(_AttachingFilePostState value)? attachingFile,
+    TResult? Function(_HasTextAndFilePostState value)? hasTextAndFile,
+    TResult? Function(_SendingPostState value)? sending,
+    TResult? Function(_SentPostState value)? sent,
+    TResult? Function(_ErrorPostState value)? error,
   }) {
     return sent?.call(this);
   }
@@ -1869,51 +1764,52 @@ class _$_SentPostState extends _SentPostState {
 }
 
 abstract class _SentPostState extends PostState {
-  const factory _SentPostState({required String text, required String path}) =
-      _$_SentPostState;
+  const factory _SentPostState(
+      {required final String text,
+      required final String path}) = _$SentPostStateImpl;
   const _SentPostState._() : super._();
 
   String get text;
   String get path;
   @JsonKey(ignore: true)
-  _$SentPostStateCopyWith<_SentPostState> get copyWith =>
+  _$$SentPostStateImplCopyWith<_$SentPostStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$ErrorPostStateCopyWith<$Res> {
-  factory _$ErrorPostStateCopyWith(
-          _ErrorPostState value, $Res Function(_ErrorPostState) then) =
-      __$ErrorPostStateCopyWithImpl<$Res>;
+abstract class _$$ErrorPostStateImplCopyWith<$Res> {
+  factory _$$ErrorPostStateImplCopyWith(_$ErrorPostStateImpl value,
+          $Res Function(_$ErrorPostStateImpl) then) =
+      __$$ErrorPostStateImplCopyWithImpl<$Res>;
+  @useResult
   $Res call({String? text, String? path, String message});
 }
 
 /// @nodoc
-class __$ErrorPostStateCopyWithImpl<$Res> extends _$PostStateCopyWithImpl<$Res>
-    implements _$ErrorPostStateCopyWith<$Res> {
-  __$ErrorPostStateCopyWithImpl(
-      _ErrorPostState _value, $Res Function(_ErrorPostState) _then)
-      : super(_value, (v) => _then(v as _ErrorPostState));
+class __$$ErrorPostStateImplCopyWithImpl<$Res>
+    extends _$PostStateCopyWithImpl<$Res, _$ErrorPostStateImpl>
+    implements _$$ErrorPostStateImplCopyWith<$Res> {
+  __$$ErrorPostStateImplCopyWithImpl(
+      _$ErrorPostStateImpl _value, $Res Function(_$ErrorPostStateImpl) _then)
+      : super(_value, _then);
 
-  @override
-  _ErrorPostState get _value => super._value as _ErrorPostState;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? text = freezed,
     Object? path = freezed,
-    Object? message = freezed,
+    Object? message = null,
   }) {
-    return _then(_ErrorPostState(
-      text: text == freezed
+    return _then(_$ErrorPostStateImpl(
+      text: freezed == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
               as String?,
-      path: path == freezed
+      path: freezed == path
           ? _value.path
           : path // ignore: cast_nullable_to_non_nullable
               as String?,
-      message: message == freezed
+      message: null == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
               as String,
@@ -1923,19 +1819,19 @@ class __$ErrorPostStateCopyWithImpl<$Res> extends _$PostStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_ErrorPostState extends _ErrorPostState {
-  const _$_ErrorPostState(
+class _$ErrorPostStateImpl extends _ErrorPostState {
+  const _$ErrorPostStateImpl(
       {this.text = '', this.path = '', this.message = 'Произошла ошибка'})
       : super._();
 
-  @JsonKey()
   @override
+  @JsonKey()
   final String? text;
-  @JsonKey()
   @override
+  @JsonKey()
   final String? path;
-  @JsonKey()
   @override
+  @JsonKey()
   final String message;
 
   @override
@@ -1947,23 +1843,21 @@ class _$_ErrorPostState extends _ErrorPostState {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _ErrorPostState &&
-            const DeepCollectionEquality().equals(other.text, text) &&
-            const DeepCollectionEquality().equals(other.path, path) &&
-            const DeepCollectionEquality().equals(other.message, message));
+            other is _$ErrorPostStateImpl &&
+            (identical(other.text, text) || other.text == text) &&
+            (identical(other.path, path) || other.path == path) &&
+            (identical(other.message, message) || other.message == message));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(text),
-      const DeepCollectionEquality().hash(path),
-      const DeepCollectionEquality().hash(message));
+  int get hashCode => Object.hash(runtimeType, text, path, message);
 
   @JsonKey(ignore: true)
   @override
-  _$ErrorPostStateCopyWith<_ErrorPostState> get copyWith =>
-      __$ErrorPostStateCopyWithImpl<_ErrorPostState>(this, _$identity);
+  @pragma('vm:prefer-inline')
+  _$$ErrorPostStateImplCopyWith<_$ErrorPostStateImpl> get copyWith =>
+      __$$ErrorPostStateImplCopyWithImpl<_$ErrorPostStateImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1983,14 +1877,14 @@ class _$_ErrorPostState extends _ErrorPostState {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? addingText,
-    TResult Function(String text)? hasText,
-    TResult Function(String text)? attachingFile,
-    TResult Function(String text, String path)? hasTextAndFile,
-    TResult Function(String text, String path)? sending,
-    TResult Function(String text, String path)? sent,
-    TResult Function(String? text, String? path, String message)? error,
+    TResult? Function()? initial,
+    TResult? Function()? addingText,
+    TResult? Function(String text)? hasText,
+    TResult? Function(String text)? attachingFile,
+    TResult? Function(String text, String path)? hasTextAndFile,
+    TResult? Function(String text, String path)? sending,
+    TResult? Function(String text, String path)? sent,
+    TResult? Function(String? text, String? path, String message)? error,
   }) {
     return error?.call(text, path, message);
   }
@@ -2032,14 +1926,14 @@ class _$_ErrorPostState extends _ErrorPostState {
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_InitialPostState value)? initial,
-    TResult Function(_AddingTextPostState value)? addingText,
-    TResult Function(_HasTextPostState value)? hasText,
-    TResult Function(_AttachingFilePostState value)? attachingFile,
-    TResult Function(_HasTextAndFilePostState value)? hasTextAndFile,
-    TResult Function(_SendingPostState value)? sending,
-    TResult Function(_SentPostState value)? sent,
-    TResult Function(_ErrorPostState value)? error,
+    TResult? Function(_InitialPostState value)? initial,
+    TResult? Function(_AddingTextPostState value)? addingText,
+    TResult? Function(_HasTextPostState value)? hasText,
+    TResult? Function(_AttachingFilePostState value)? attachingFile,
+    TResult? Function(_HasTextAndFilePostState value)? hasTextAndFile,
+    TResult? Function(_SendingPostState value)? sending,
+    TResult? Function(_SentPostState value)? sent,
+    TResult? Function(_ErrorPostState value)? error,
   }) {
     return error?.call(this);
   }
@@ -2065,14 +1959,16 @@ class _$_ErrorPostState extends _ErrorPostState {
 }
 
 abstract class _ErrorPostState extends PostState {
-  const factory _ErrorPostState({String? text, String? path, String message}) =
-      _$_ErrorPostState;
+  const factory _ErrorPostState(
+      {final String? text,
+      final String? path,
+      final String message}) = _$ErrorPostStateImpl;
   const _ErrorPostState._() : super._();
 
   String? get text;
   String? get path;
   String get message;
   @JsonKey(ignore: true)
-  _$ErrorPostStateCopyWith<_ErrorPostState> get copyWith =>
+  _$$ErrorPostStateImplCopyWith<_$ErrorPostStateImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -8,7 +8,7 @@
   
   MIT License
   
-  Copyright (c) 2022 Plague Fox
+  Copyright (c) 2023 Plague Fox
   
   Permission is hereby granted, free of charge, to any person obtaining a copy
   of this software and associated documentation files (the "Software"), to deal
@@ -58,7 +58,7 @@ const List<String> pre = <String>[];
 const List<String> build = <String>[r'1'];
 
 /// Build date in Unix Time (in seconds)
-const int timestamp = 1642870672;
+const int timestamp = 1700003746;
 
 /// Name [name]
 const String name = r'scoped_bloc_example';
@@ -83,8 +83,7 @@ const String publishTo = r'none';
 
 /// Environment
 const Map<String, String> environment = <String, String>{
-  'sdk': '>=2.15.1',
-  'flutter': '>=2.15.1',
+  'sdk': '>=3.0.0 <4.0.0',
 };
 
 /// Dependencies
@@ -92,9 +91,12 @@ const Map<String, Object> dependencies = <String, Object>{
   'flutter': <String, Object>{
     'sdk': r'flutter',
   },
+  'flutter_localizations': <String, Object>{
+    'sdk': r'flutter',
+  },
   'meta': r'^1.7.0',
-  'json_annotation': r'^4.3.0',
-  'freezed_annotation': r'^1.0.0',
+  'json_annotation': r'^4.8.1',
+  'freezed_annotation': r'^2.4.1',
   'bloc': r'^8.0.2',
   'flutter_bloc': r'^8.0.1',
   'bloc_concurrency': r'^0.2.0',
@@ -110,17 +112,14 @@ const Map<String, Object> devDependencies = <String, Object>{
   'flutter_test': <String, Object>{
     'sdk': r'flutter',
   },
-  'analyzer': r'>=2.8.0 <4.0.0',
-  'build_runner': r'^2.1.4',
+  'build_runner': r'^2.4.6',
   'build_web_compilers': r'^3.2.1',
-  'mockito': r'^5.0.15',
   'flutter_lints': r'^1.0.4',
-  'dart_code_metrics': r'^4.10.0-dev.2',
   'flutter_launcher_icons': r'^0.9.0',
-  'json_serializable': r'^6.0.1',
-  'freezed': r'^1.0.0',
+  'freezed': r'^2.4.5',
+  'json_serializable': r'^6.7.1',
   'pubspec_generator': r'^3.0.1',
-  'flutter_gen_runner': r'^4.0.1',
+  'flutter_gen_runner': r'^5.3.2',
   'args': r'^2.0.0',
   'pub_semver': r'^2.1.0',
 };
